@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Mercado Fresco</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Assets/Favicon/site.webmanifest">
+</head>
+
+<body>
+    <!-- Modal Demo -->
+    <div class="modal fade" id="modalDescripcion" tabindex="-1" aria-labelledby="modalDescripcionLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 id="modalDescripcionLabel">Demo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Este sitio es solo una demo :( </p>
+                    <p>El servicio "Mercado Fresco" no existe.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="d-flex flex-column align-items-center justify-content-center">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg py-4 bg-dark text-white bg-opacity-25 mx-5 rounded-5 rounded-top-0 px-3 w-75">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bold" href="#" data-bs-toggle="tooltip"
+                    data-bs-title="MercadoFresco" data-bs-placement="bottom">Mercado Fresco <ion-icon
+                        name="restaurant-outline"></ion-icon></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link overflow-hidden" href="#comoFunciona">Cómo funciona</a>
+                        </li>
+                        <li class="nav-item pe-2">
+                            <a class="nav-link" href="#destacados">Platos destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button"
+                                class="btn btn-dark d-flex justify-content-center align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#modalDescripcion">Carrito<ion-icon class="fs-4"
+                                    name="cart-outline"></ion-icon></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- hero -->
+        <section class="pt-5">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="d-flex flex-lg-nowrap flex-wrap align-items-center justify-content-between gap-5">
+                        <div class="col-12 col-lg-6 bg-dark bg-opacity-50 p-5 rounded-5 shadow-lg">
+                            <h1 class="text-white fw-bold ">
+                                Descubra un mundo de sabores a
+                                la puerta de su casa
+                            </h1>
+                            <p class="text-white py-2">
+                                Amplia gama de deliciosos platos de diversos restaurantes.
+                                <br>
+                                Desde aperitivos, postres y bebidas tenemos algo para satisfacer cada antojo.
+                            </p>
+                            <button type="button" class="btn btn-lg btn-success" data-bs-toggle="modal"
+                                data-bs-target="#modalDescripcion">Pedir ahora</button>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex justify-content-end">
+                                <img src="Assets/Images/diet-planning.png" class="w-100 shadow-img-header"
+                                    alt="Ilustracion - https://sketchvalley.com/portfolio/popular-diet-plans/" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="pt-4 pb-5 " id="destacados">
+            <div class="container">
+                <h2 class="text-light fw-bold text-center pt-5 pb-5">
+                    Platos destacados
+                </h2>
+            </div>
+            <div class="container text-start">
+                <div class="row g-5 ">
+                    <div class="col col-lg-3">
+                        <div class="card shadow-sm border-0 rounded-5 shadow-lg overflow-hidden">
+                            <img class="p-2 pb-0 rounded-5"
+                                src="https://c.pxhere.com/photos/33/ed/food_burger_sandwich_bacon_dinner-44324.jpg!d"
+                                alt="Hamburguesa - https://pxhere.com/en/photo/44324" />
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title fw-bold">Hamburguesa</h5>
+                                    <p class="text-center m-0 bg-success bg-opacity-25 px-2 rounded-4">$14.990</p>
+                                </div>
+                                <p class="m-0 card-subtitle">
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star-half"></ion-icon>
+                                    <span class="fw-semibold">4,8</span> <span class="text-secondary">(987)</span>
+                                </p>
+                                <p class="text-secondary">
+                                    Jugosa carne de res acompañada de queso fundido, tocino crujiente,
+                                    lechuga fresca, tomate maduro y una deliciosa salsa secreta, todo entre dos panes
+                                    suaves y tostados.
+                                </p>
+                                <button type="button" class="btn btn-success w-100 mt-auto rounded-5"
+                                    data-bs-toggle="modal" data-bs-target="#modalDescripcion">Pedir ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3">
+                        <div class="card shadow-sm border-0 rounded-5 shadow-lg overflow-hidden">
+                            <img class="p-2 pb-0 rounded-5"
+                                src="https://c.pxhere.com/photos/30/0f/pizza_drink_food-954587.jpg!d"
+                                alt="Pizza - https://pxhere.com/en/photo/954587" />
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title fw-bold">Pizza</h5>
+                                    <p class="text-center m-0 bg-success bg-opacity-25 px-2 rounded-4">$15.990</p>
+                                </div>
+                                <p class="m-0 card-subtitle">
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star-half"></ion-icon>
+                                    <span class="fw-semibold">4,7</span> <span class="text-secondary">(785)</span>
+                                </p>
+                                <p class="text-secondary">
+                                    Delgada y crujiente masa de pizza cubierta con salsa de tomate casera,
+                                    mozzarella derretida, salchichas italianas, champiñones frescos, pimientos rojos
+                                    asados y aceitunas negras, todo sazonado con hierbas aromáticas.
+                                </p>
+                                <button type="button" class="btn btn-success w-100 mt-auto rounded-5"
+                                    data-bs-toggle="modal" data-bs-target="#modalDescripcion">Pedir ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3">
+                        <div class="card shadow-sm border-0 rounded-5 shadow-lg overflow-hidden">
+                            <img class="p-2 pb-0 rounded-5"
+                                src="https://c.pxhere.com/images/93/d9/f4a18118e46eb797e2e32693fbbc-1634379.jpg!d"
+                                alt="Sushi - https://pxhere.com/en/photo/1634379" />
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title fw-bold">Sushi</h5>
+                                    <p class="text-center m-0 bg-success bg-opacity-25 px-2 rounded-4">$12.990</p>
+                                </div>
+                                <p class="m-0 card-subtitle">
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star-half"></ion-icon>
+                                    <span class="fw-semibold">4,6</span> <span class="text-secondary">(1455)</span>
+                                </p>
+                                <p class="text-secondary">
+                                    Rollitos de arroz pegajoso rellenos de pescado crudo fresco, aguacate cremoso
+                                    y pepino fresco, envueltos en alga nori crujiente y cortados en bocados perfectos,
+                                    acompañados de salsa de soja y wasabi.
+                                </p>
+                                <button type="button" class="btn btn-success w-100 mt-auto rounded-5"
+                                    data-bs-toggle="modal" data-bs-target="#modalDescripcion">Pedir ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3">
+                        <div class="card shadow-sm border-0 rounded-5 shadow-lg overflow-hidden">
+                            <img class="p-2 pb-0 rounded-5"
+                                src="https://c.pxhere.com/photos/ad/3e/bake_ice_cream_cake_cake_ice-1225176.jpg!d"
+                                alt="Torta - https://pxhere.com/en/photo/1225176" />
+                            <div class="card-body d-flex flex-column ">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title fw-bold">Torta Frutilla</h5>
+                                    <p class="text-center m-0 bg-success bg-opacity-25 px-2 rounded-4">$8.490</p>
+                                </div>
+                                <p class="m-0 card-subtitle">
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <ion-icon class="text-warning" name="star"></ion-icon>
+                                    <span class="fw-semibold">5</span> <span class="text-secondary">(42)</span>
+                                </p>
+                                <p class="text-secondary">
+                                    Esponjoso bizcocho de crema impregnado con jarabe de fresa,
+                                    relleno de crema batida ligera y frescas fresas,
+                                    arándanos jugosos y moras dulces, todo cubierto con más crema batida y adornado con
+                                    fresas frescas y bayas silvestres.
+                                </p>
+
+                                <button type="button" class="btn btn-success w-100 mt-auto rounded-5"
+                                    data-bs-toggle="modal" data-bs-target="#modalDescripcion">Pedir ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 d-flex align-items-center w-100 justify-content-center">
+                <button type="button" class="btn btn-dark rounded-4 overflow-hidden" data-bs-toggle="modal"
+                    data-bs-target="#modalDescripcion">
+                    <span class="rounded-4 d-flex align-items-center justify-content-center gap-2">
+                        Ver más <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </span>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="py-2 bg-light" id="comoFunciona">
+            <div class="container text-dark">
+                <h2 class="fw-bold text-center py-5 pb-3">
+                    Cómo funciona Mercado Fresco
+                </h2>
+                <div class="container my-5">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-5">
+                        <div class="col col-lg-3">
+                            <div
+                                class="shadow-sm flex-column justify-content-center rounded-5 shadow-lg overflow-hidden card-how bg-light">
+                                <div class="d-flex gap-2 justify-content-center align-items-center">
+                                    <ion-icon class="icon-esquina radius-only-end-bottom" name="search"></ion-icon>
+                                    <h5 class="fw-bold p-1 w-100 m-0">
+                                        Explora nuestro menú
+                                    </h5>
+                                </div>
+                                <p class="p-4">
+                                    Descubre una amplia variedad de platos deliciosos de diversas cocinas. Desde
+                                    entradas y platos principales hasta postres y bebidas, tenemos algo para satisfacer
+                                    todos los antojos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3">
+                            <div
+                                class="shadow-sm flex-column justify-content-center rounded-5 shadow-lg overflow-hidden card-how bg-light">
+                                <div class="d-flex gap-2 justify-content-center align-items-center">
+                                    <ion-icon class="icon-esquina radius-only-end-bottom"
+                                        name="restaurant-outline"></ion-icon>
+                                    <h5 class="fw-bold p-1 w-100 m-0">
+                                        Realiza tu pedido
+                                    </h5>
+                                </div>
+                                <p class="p-4">
+                                    Sumérgete en nuestro catálogo de sabores y selecciona tus platillos favoritos con
+                                    solo unos clics. Desde auténticas recetas caseras hasta creaciones gourmet,
+                                    encontrarás una tentadora variedad para satisfacer todos tus gustos culinarios.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3">
+                            <div
+                                class="shadow-sm flex-column justify-content-center rounded-5 shadow-lg overflow-hidden card-how bg-light">
+                                <div class="d-flex gap-2 justify-content-center align-items-center">
+                                    <ion-icon class="icon-esquina radius-only-end-bottom"
+                                        name="navigate-circle-outline"></ion-icon>
+                                    <h5 class="fw-bold p-1 w-100 m-0">
+                                        Sigue tu entrega
+                                    </h5>
+                                </div>
+                                <p class="p-4">
+                                    Siéntate y relájate mientras nuestros dedicados profesionales de entrega llevan
+                                    rápidamente tu pedido a tu ubicación. Monitorea el progreso de tu entrega en tiempo
+                                    real y sabe exactamente cuándo esperar tu comida.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-lg-3">
+                            <div
+                                class="shadow-sm flex-column justify-content-center rounded-5 shadow-lg overflow-hidden card-how bg-light">
+                                <div class="d-flex gap-2 justify-content-center align-items-center">
+                                    <ion-icon class="icon-esquina radius-only-end-bottom"
+                                        name="happy-outline"></ion-icon>
+                                    <h5 class="fw-bold p-1 w-100 m-0">
+                                        Disfruta tu comida
+                                    </h5>
+                                </div>
+                                <p class="p-4">
+                                    Una vez que llegue tu pedido, disfruta de una experiencia culinaria llena de sabor
+                                    desde la comodidad de tu hogar. Nuestro compromiso con la calidad garantiza que cada
+                                    bocado sea un deleite.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials py-5 d-flex justify-content-center align-items-center text-white">
+            <div class="container">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container py-5">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div
+                                            class="d-flex flex-column align-items-center justify-content-center text-center">
+                                            <div class="w-50 rounded-5">
+                                                <img src="Assets/Images/Avatars/sarah.jpg" width="150px"
+                                                    class="rounded-circle pb-4" alt="Imagen Sarah" />
+                                                <p class="text-white">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                </p>
+                                                <p class="pb-2">
+                                                    Mercado Fresco ha transformado la forma en que disfruto las comidas.
+                                                    La comodidad de pedir mis platos favoritos desde
+                                                    restaurantes locales y que me los entreguen a mi
+                                                    puerta es simplemente fantástico.
+                                                </p>
+                                                <h3>Sarah M</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container py-5">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div
+                                            class="d-flex flex-column align-items-center justify-content-center text-center">
+                                            <div class="w-50">
+                                                <img src="Assets/Images/Avatars/john.jpg" width="150px"
+                                                    class="rounded-circle pb-4" alt="imagen John" />
+                                                <p class="text-white">
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star"></ion-icon>
+                                                    <ion-icon name="star-half"></ion-icon>
+                                                </p>
+                                                <p class="pb-2">
+                                                    La oferta de restaurantes es amplia y diversa, 
+                                                    con opciones para todos los gustos y presupuestos. 
+                                                    Me encantaría que la selección de algunos tipos de cocina, como la vegetariana, fuera aún más amplia.
+                                                </p>
+                                                <h3>John j</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container py-5">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div
+                                            class="d-flex flex-column align-items-center justify-content-center text-center">
+                                            <div class="w-50">
+                                                <img src="Assets/Images/Avatars/marco.jpg" width="150px"
+                                                    class="rounded-circle pb-4" alt="imagen Marco" />
+                                                <p class="text-white">
+                                                    <ion-icon name="star-half"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                </p>
+                                                <p class="pb-2">
+                                                    Nunca recibi mi pedido. Lo unico bueno que tienen es la página web.
+                                                </p>
+                                                <h3>Marco C</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white py-5">
+        <div class="d-flex flex-wrap gap-5 m-5 justify-content-between align-items-center px-5" id="contacto">
+            <div>
+                <p class="fw-bold pb-3">Visitanos <ion-icon name="map-outline"></ion-icon></p>
+                <p>
+                    1234 Calle Ejemplo, Ciudad, <br />
+                    Ciudad, Pais
+                </p>
+                <a href="mailto:info@mercadofresco.com" class="text-dark">info@mercadofresco.com</a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.27286784284!2d-70.7949807210933!3d-33.47239204529389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1708368830487!5m2!1ses!2scl" 
+                width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div>
+                <p class="fw-bold pb-3">Enlaces</p>
+                <div class="d-flex flex-column">
+                    <a href="/" class="text-dark">Inicio</a>
+                    <a href="#comoFunciona" class="text-dark">Cómo funciona</a>
+                    <a href="#destacados" class="text-dark">Platos destacados</a>
+                    <a class="text-dark" data-bs-toggle="modal" data-bs-target="#modalDescripcion">Contacto</a>
+                </div>
+            </div>
+            <div>
+                <p class="fw-bold pb-3">Nuestras redes</p>
+                <div class="d-flex">
+                    <a href="#" class="text-dark px-3" data-bs-toggle="modal"
+                        data-bs-target="#modalDescripcion">
+                        <ion-icon name="logo-facebook" class="rounded-circle p-3 bg-dark text-white fs-4"></ion-icon>
+                    </a>
+                    <a href="#" class="text-dark px-3" data-bs-toggle="modal"
+                        data-bs-target="#modalDescripcion">
+                        <ion-icon name="logo-instagram" class="rounded-circle p-3 bg-dark text-white fs-4"></ion-icon>
+                    </a>
+                    <a href="#" class="text-dark px-3" data-bs-toggle="modal"
+                        data-bs-target="#modalDescripcion">
+                        <ion-icon name="logo-github" class="rounded-circle p-3 bg-dark text-white fs-4"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-secondary"> &copy; 2024 Desarrollado por 
+            <a href="https://github.com/Alplox/mercado-fresco/" target="_blank" rel="noopener noreferrer">Alplox</a>
+        </p>
+        <p class="text-center text-secondary">Proyecto basado en 
+            <a href="https://github.com/Sharanupatil8/Bootstrapv5.3-website" target="_blank"
+                rel="noopener noreferrer">https://github.com/Sharanupatil8/Bootstrapv5.3-website
+            </a>
+        </p>
+    </footer>
+
+    <!-- Boostrap Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Script Tooltip Boostrap -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        );
+        const tooltipList = [...tooltipTriggerList].map(
+            (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+    </script>
+</body>
+</html>
