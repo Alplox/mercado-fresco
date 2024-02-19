@@ -2,7 +2,7 @@
 
 Mercado Fresco es un sitio web a modo de practica usando Bootsrap v5.3
 
-[![](https://raw.githubusercontent.com/Alplox/mercado-fresco/master/Assets/Images/Mercado-Fresco-Fullpage-v0.jpeg)](https://alplox.github.io/mercado-fresco/)
+[![](https://raw.githubusercontent.com/Alplox/mercado-fresco/main/Assets/Images/Mercado-Fresco-Fullpage-v0.jpeg)](https://alplox.github.io/mercado-fresco/)
 
 ## Créditos
 Este software utiliza los siguientes paquetes de código abierto:
